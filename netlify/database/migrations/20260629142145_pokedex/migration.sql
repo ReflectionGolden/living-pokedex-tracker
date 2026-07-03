@@ -6,5 +6,3 @@ CREATE TABLE "pokedex" (
 	"shiny" boolean NOT NULL,
 	"pic_url" text DEFAULT 'none'
 );
---> statement-breakpoint
-DROP TABLE "planets";
