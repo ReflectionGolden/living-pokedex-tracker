@@ -1,0 +1,105 @@
+{
+  "version": "8",
+  "dialect": "postgres",
+  "id": "f4bc58fb-d35d-4d72-93dc-a095b2e21cda",
+  "prevIds": [
+    "1a1e4292-0929-4e59-889e-ee14561ad3c0"
+  ],
+  "ddl": [
+    {
+      "isRlsEnabled": false,
+      "name": "pokedex",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "type": "serial",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pokedex"
+    },
+    {
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "dex_num",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pokedex"
+    },
+    {
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "form_num",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pokedex"
+    },
+    {
+      "type": "boolean",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "have",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pokedex"
+    },
+    {
+      "type": "boolean",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "shiny",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pokedex"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": "'none'",
+      "generated": null,
+      "identity": null,
+      "name": "pic_url",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pokedex"
+    },
+    {
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "name": "pokedex_pkey",
+      "schema": "public",
+      "table": "pokedex",
+      "entityType": "pks"
+    }
+  ],
+  "renames": []
+}
