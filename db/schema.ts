@@ -1,6 +1,6 @@
 import { boolean, integer, pgTable, serial, text } from 'drizzle-orm/pg-core'
 
-export const planets = pgTable('pokedex', {
+export const pokedex = pgTable('pokedex', {
   id: serial("id").primaryKey(),
   dexNum: integer("dex_num").notNull(),
   formNum: integer("form_num").notNull(),
