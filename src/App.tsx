@@ -9,7 +9,7 @@ function App() {
   const fetchBoxOne = async() => {
     try {
       setLoading(true);
-      const res = await fetch('/.netlify/functions/api/box1');
+      const res = await fetch('/netlify/functions/api/box1');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json()
       setBox(data)
@@ -22,13 +22,14 @@ function App() {
     }
   }
   
-  useEffect(() => {
-    fetchBoxOne();
-  }, []);
+  //useEffect(() => {
+  //  fetchBoxOne();
+  //}, []);
 
   return (
     <>
       <h1>Personal Living Pokedex Tracker</h1>
+      <button onClick={fetchBoxOne}>Call Box</button>
       <div className="card">
         {loading && <p>Loading...</p>}
         {error && <p style={{ color: 'red' }}>Error: {error}</p>}

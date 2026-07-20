@@ -1,10 +1,10 @@
 import { drizzle } from 'drizzle-orm/netlify-db'
 import * as schema from '../../../db/schema'
 
-const db = drizzle();
+const db = drizzle(process.env.NETLIFY_DB_URL!);
 
 export async function handler(event: { path: string }) {
-    const path = event.path.replace('/.netlify/functions/api', '');
+    const path = event.path.replace('/netlify/functions/api', '');
 
     try {
         //fetch the first box of pokedex entries
